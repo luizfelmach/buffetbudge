@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/buffetbudget/static/js/main.088a1147.js",
+    "main.js": "/buffetbudget/static/js/main.dd973505.js",
     "index.html": "/buffetbudget/index.html",
-    "main.088a1147.js.map": "/buffetbudget/static/js/main.088a1147.js.map"
+    "main.dd973505.js.map": "/buffetbudget/static/js/main.dd973505.js.map"
   },
   "entrypoints": [
-    "static/js/main.088a1147.js"
+    "static/js/main.dd973505.js"
   ]
 }
