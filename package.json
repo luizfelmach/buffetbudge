@@ -1,6 +1,7 @@
 {
   "name": "buffetbudget",
   "version": "0.1.0",
+  "homepage": "http://luizfelmach.github.io/buffetbudget",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.6",
@@ -29,7 +30,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -50,6 +53,7 @@
     ]
   },
   "devDependencies": {
-    "@types/file-saver": "^2.0.5"
+    "@types/file-saver": "^2.0.5",
+    "gh-pages": "^5.0.0"
   }
 }
