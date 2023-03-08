@@ -36,7 +36,8 @@ const initial: BudgeType = {
   to: "",
   entry: "",
   comments: [
-    "Incluso no valor do orçamento toda a equipe necessária para a execução do serviço de Buffet, bem como todo o material para servir em louça",
+    "incluso no valor do orçamento toda a equipe necessária para a execução do serviço de Buffet, bem como todo o material para servir em louça",
+    "orçamento válido por 10 dias",
   ],
   guests: 0,
   price: 0,
