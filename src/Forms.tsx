@@ -92,9 +92,12 @@ export const Forms = () => {
   const handleGenPDF = async () => {
     const document = <PdfDocument budge={budge} />;
 
-    const blob = await pdf(document).toBlob();
-
-    saveAs(blob, `Orçamento_${budge.to}.pdf`);
+    pdf(document)
+      .toBlob()
+      .then((blob) => {
+        saveAs(blob, `Orçamento_${budge.to}.pdf`);
+      })
+      .catch((err) => console.log(err));
   };
 
   const handleTo = (e: ChangeEvent<HTMLInputElement>) => {
