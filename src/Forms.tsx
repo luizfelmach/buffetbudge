@@ -43,13 +43,11 @@ const initial: BudgeType = {
   price: 0,
   services: [
     {
-      label: "roda de buteco",
+      label: "Roda de Buteco",
       items: [
         "filé de peito de frango empanado",
         "batata frita",
         "polenta frita",
-        "queijo",
-        "presunto",
         "linguiça tipo churraco confril",
         "torresmo",
         "batata baby",
@@ -58,18 +56,48 @@ const initial: BudgeType = {
         "mini churros",
         "mini pizza",
         "ovo de codorna",
+        "tilápia frita",
+        "anel de cebola",
         "tábua de frios (lombo, salaminho, presunto, queijo, azeitona, etc.)",
+      ],
+    },
+    {
+      label: "Jantar",
+      items: [
+        "arroz",
+        "boi ao molho madeira",
+        "frango",
+        "carne de porco assado",
+        "strogonoff de frango",
+        "salada com folhas, frutas e verduras",
+        "churrasco (carne de boi, porco, frango, linguiça, pão de alho, vinagrete, etc.)",
+        "farofas",
+        "feijão tropeiro",
+        "salpicão",
       ],
     },
 
     {
-      label: "bebidas",
-      items: ["suco 2 sabores", "coca-cola", "guaraná"],
+      label: "Bebidas",
+      items: [
+        "suco 2 sabores",
+        "coca-cola",
+        "guaraná",
+        "cerveja",
+        "drinks",
+        "coquetel de fruta",
+      ],
     },
   ],
 };
 
-const entries = ["salgadinhos", "churrasco"];
+const entries = [
+  "salgadinhos",
+  "churrasco",
+  "roda de buteco",
+  "almoço",
+  "jantar",
+];
 
 export const Forms = () => {
   const [activeStep, setActiveStep] = useState(0);
