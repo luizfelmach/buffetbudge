@@ -167,7 +167,7 @@ export const PdfDocument = ({ budge }: Props) => {
             Valor do Serviço:
             <Text style={{ fontStyle: "normal" }}>
               {" "}
-              R$ {budge.price},00 (
+              R$ {budge.price.toFixed(2)} (
               {PE.porExtenso(budge.price, PE.estilo.monetario)}).
             </Text>
           </Text>

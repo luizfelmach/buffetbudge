@@ -235,7 +235,7 @@ export const Forms = () => {
             InputLabelProps={{
               shrink: true,
             }}
-            value={budge.guests}
+            value={budge.guests === 0 ? "" : budge.guests}
             onChange={handleGuests}
             sx={{ width: 250, mt: 2, mb: 2 }}
           />
@@ -251,7 +251,7 @@ export const Forms = () => {
                 <TextField {...params} label="Entrada" />
               )}
               value={budge.entry}
-              onChange={handleEntry}
+              onInputChange={handleEntry}
             />
             <Checkbox
               inputProps={{ "aria-label": "Checkbox demo" }}
@@ -267,7 +267,7 @@ export const Forms = () => {
             InputLabelProps={{
               shrink: true,
             }}
-            value={budge.price}
+            value={budge.price === 0 ? "" : budge.price}
             sx={{ width: 250, mt: 2, mb: 2 }}
             onChange={handlePrice}
           />
